@@ -9,3 +9,5 @@ before_install:
     - docker build -t vivien/sample-app -f Dockerfile.dev .
 script:     
     - docker run -e CI=true vivien/sample-app npm run test -- --coverage --watchAll=false
+
+
